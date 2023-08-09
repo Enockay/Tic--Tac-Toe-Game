@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe Game</title>
+    <link rel="stylesheet" href="style.css">  
+</head>
+<body>
+    <!--the main container of the items-->
+    <div id = "main-container">
+        <label for="titile" class="title">Tha Tic Tac Toe Game Do you want to play against The Computer ? </label>
+        <div id="container">
+            <!--toggle section with mark pen-->
+            <div id = "markers">
+                <label for="select" class="select">Your marker here is :</label>
+                <p>
+                    <label for ="x" class="select"id="selectX" value="x">X</label>   And   
+                    <label for="O" class="select" id ="selectO" value="o">O</label> for Computer
+                </p>
+                <button class="restart">reset</button>
+            </div>
+            <!---end of the markers-->
+            <!--toggle section with grid-->
+            <div class="game-board">
+                <div class="grid" id="grid"data-row="0" data-col="0"></div>
+                <div class="grid" id="grid" data-row="0" data-col="1"></div>
+                <div class="grid" id="grid" data-row="0" data-col="2"></div>
+                <div class="grid" id="grid" data-row="1" data-col="0"></div>
+                <div class="grid" id="grid" data-row="1" data-col="1"></div>
+                <div class="grid" id="grid" data-row="1" data-col="2"></div>
+                <div class="grid" id="grid" data-row="2" data-col="0"></div>
+                <div class="grid" id="grid" data-row="2" data-col="1"></div>
+                <div class="grid" id="grid" data-row="2" data-col="2"></div>
+            </div>
+            <!--end of grid Section-->
+            <!--toggle section with game description-->
+            <div class="description">
+                <p class="p">
+                    <label for="computerName">ComputerName :</label>
+                    <label for="computerName" class="computerName">Artificial Intelligence</label>
+                </p>
+              
+                <p class="p">
+                    
+                    <label for="playerName">playerName : </label>
+                    <input type="text" id="playerName" required>
+                    <button class="submit">submit</button>
+                    <p class="p">
+                    <label for="playerName">playerName : </label>
+                    <label for="playerName" class="playerName"> </label>
+                    </p>
+                   
+                 
+                </p>
+            </form>
+            
+            </div>
+            <!--end of game description-->
+        </div>
+        <p class="p" id="results" >
+            <label for="Results">Results: </label>
+            <label for="Results" class="Results"id="Results"></label>
+        </p>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
